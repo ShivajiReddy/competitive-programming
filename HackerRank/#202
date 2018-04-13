@@ -1,0 +1,15 @@
+#202
+Working: 1F 14, 1F 23
+Non-working: 1F 26, 1F 09, 1F 22, 1F 20, 1F 25, 1F 19
+
+#203
+Working: 1F30, 1F51
+
+#205
+Working: 1F 88, 1F 73, 1F 72
+Not working: 1F 77 , 1F 85 + None in Right
+
+#204
+Working: 1F 56, 1F 69, 1F 68
+Not working: 1F 53, , 1F 54, 1F 59, 1F 65, 1F 64, 1F 61
+ 
