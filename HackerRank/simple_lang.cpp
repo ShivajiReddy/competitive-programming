@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
 			x += y[i];
 	}
 
-	cout << x << endl;
+	cout << x<< endl;
 
 
 	return 0;
