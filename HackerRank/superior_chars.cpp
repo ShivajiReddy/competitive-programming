@@ -18,5 +18,6 @@ int main(int argc, char const *argv[])
 		cout << sum/2 << endl;
 	}	
 
+
 	return 0;
 }
