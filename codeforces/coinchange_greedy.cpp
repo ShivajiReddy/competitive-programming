@@ -3,7 +3,7 @@
 using namespace std;
  
 // All denominations of Indian Currency
-int deno[] = {1, 5, 10};
+int deno[] = {1, 2, 3};
 int n = sizeof(deno)/sizeof(deno[0]);
  
 // Driver program
