@@ -3,7 +3,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-
+	//This thin works!
 	long long x = 8, n;
 	cin >> n;
 	if(n == 1) cout << 8;

@@ -3,7 +3,7 @@ using namespace std;
 
 void twoSums(vector<int> v, int target)
 {
-	//returns index after sorting
+	//returns index after sorting; gotta use hashmap
 	sort(v.begin(), v.end());
 	int l = 0, r = v.size()-1;
 	while(l < r)
