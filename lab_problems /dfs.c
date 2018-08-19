@@ -16,10 +16,8 @@ void dfs(int i)
 void main()
 {
     int i,j;
-    printf("Enter number of vertices:\n");
-   
+    printf("Enter number of vertices:\n");  
     scanf("%d",&n);
- 
     
     printf("\nEnter adjecency matrix: \n");
    
