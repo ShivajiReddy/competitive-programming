@@ -14,7 +14,8 @@ int main()
             scanf("%d",&a[i][j]);
     }
  
-    for(i=0;i<n;i++){
+    for(i=0;i<n;i++)
+    {
         indeg[i]=0;
         flag[i]=0;
     }
@@ -25,7 +26,8 @@ int main()
  
     printf("\nThe topological order is:");
  
-    while(count<n){
+    while(count<n)
+    {
         for(k=0;k<n;k++){
             if((indeg[k]==0) && (flag[k]==0)){
                 printf("%d ",(k+1));
@@ -40,11 +42,12 @@ int main()
  
         count++;
     }
-     return 0;
+    return 0;
 }
 
 
-/*______________________-_-______________________*/
+______________________-_-______________________
+
 //This doesn't stop taking input, god knows why!
 
 /*#include <stdio.h>
