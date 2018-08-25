@@ -7,7 +7,7 @@
 int main()
 {
 	int sockfd, result, n = 1, len;
-	char ch[256], buf[256];
+	char ch[256], buf[256]
 	struct sockaddr_in addr;
 	addr.sin_family = AF_INET;
 	addr.sin_port = htons(10200);
@@ -26,4 +26,5 @@ int main()
 		n = read(sockfd, buf, sizeof(buf));
 		puts(buf);
 	}
+	return 0;
 }
