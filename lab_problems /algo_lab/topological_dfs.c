@@ -1,25 +1,46 @@
 #include <stdio.h>
-#include <stdlib.h>
 
+//int n, adj_graph[4][4], visited[10]; 
+int tricky_stack[10], cur = 0;
 
-
-int main(int argc, char const *argv[])
+void dfs(int i, int n, int adj_graph[4][4], int visited[n])
 {
-	int graph[10][10];
-	int n;
-	printf("Number of vertices:\n");
-	scanf("%d", &n);
+    int j;
+    //printf("\n%d", i+1);
+    tricky_stack[cur++] = i+1;
 
-	printf("Enter the adjacency matrix\n");
+    visited[i]=1;
+    
+    for(j=0; j<n; j++)
+       if(!visited[j] && adj_graph[i][j]==1)
+            dfs(j, n, adj_graph, visited);
+} 
 
-	for (int i = 0; i < n; ++i)
-	{
-		for(int j = 0; j < n; j++)
-		{
-			scanf("%d", &graph[i][j]);
-		}
-	}
-
-
-	return 0;
+void main()
+{
+    int i,j;
+    int n, adj_graph[4][4], visited[10]; 
+    printf("Enter number of vertices:\n");  
+    scanf("%d",&n);
+    
+    printf("\nEnter adjecency matrix: \n");
+   
+    for(i=0; i<n; i++)
+    {
+    	for(j=0; j<n; j++)
+    	{
+    		scanf("%d", &adj_graph[i][j]);
+    	}
+    }   
+  
+    for(i=0; i<n; i++)
+        visited[i]=0;
+ 
+    dfs(0, n, adj_graph, visited);
+    for (int i = cur-1; i >= 0; i--)
+    {
+        printf("%d\n", tricky_stack[i]);
+    }
+    printf("\n");
 }
+ 

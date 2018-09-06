@@ -13,8 +13,9 @@ using namespace std;
     curIdx          - current subsetSum index
     limitIdx        - lastIdx from where array element should
                       be taken */
-bool isKPartitionPossibleRec(int arr[], int subsetSum[], bool taken[],
-                   int subset, int K, int N, int curIdx, int limitIdx)
+
+//isKPartitionPossibleRec(arr, subsetSum, taken, subset, K, N, 0, N - 1);
+bool isKPartitionPossibleRec(int arr[], int subsetSum[], bool taken[], int subset, int K, int N, int curIdx, int limitIdx)
 {
     if (subsetSum[curIdx] == subset)
     {
@@ -24,8 +25,7 @@ bool isKPartitionPossibleRec(int arr[], int subsetSum[], bool taken[],
             return true;
  
         //  recursive call for next subsetition
-        return isKPartitionPossibleRec(arr, subsetSum, taken, subset,
-                                            K, N, curIdx + 1, N - 1);
+        return isKPartitionPossibleRec(arr, subsetSum, taken, subset, K, N, curIdx + 1, N - 1);
     }
  
     //  start from limitIdx and include elements into current partition
@@ -97,8 +97,7 @@ bool isKPartitionPossible(int arr[], int N, int K)
     taken[N - 1] = true;
  
     //  call recursive method to check K-substitution condition
-    return isKPartitionPossibleRec(arr, subsetSum, taken,
-                                     subset, K, N, 0, N - 1);
+    return isKPartitionPossibleRec(arr, subsetSum, taken, subset, K, N, 0, N - 1);
 }
  
 //  Driver code to test above methods
