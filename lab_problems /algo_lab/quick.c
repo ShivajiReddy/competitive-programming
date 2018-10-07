@@ -10,7 +10,7 @@ void random_shuffle(int arr[]) {
         arr[i] = arr[j];
         arr[j] = temp;
     }
-}
+}/
  
 void swap(int *a, int *b) {
     int temp;
@@ -20,6 +20,7 @@ void swap(int *a, int *b) {
 }
 int partion(int arr[], int p, int r) {
     int pivotIndex = p + rand() % (r - p + 1); //generates a random number as a pivot
+    
     int pivot;
     int i = p - 1;
     int j;
