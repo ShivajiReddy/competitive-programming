@@ -31,7 +31,7 @@ void lru_secondchance(int p[],int n,int fm_sz)
 		if(isPresent(p[i],f,fm_sz)==-1)
 		{
 			while(ref_bit[ptr]==1)
-			{
+	1		{
 				ref_bit[ptr]=0;
 				ptr=(ptr+1)%fm_sz;
 			}

@@ -23,8 +23,8 @@ int main (int argc, const char * argv []) {
 
 	int segment_id = shmget(IPC_PRIVATE, SIZE, S_IRUSR | S_IWUSR);
 
-	char *shared_memory = (char *)shmat(segment_id, NULL, 0);
-	
+	char *shared_memory = (char *)shmat(segment_id, NULL, 0);		
+
 	*shared_memory = '\0';
 
 	pid_t pid;

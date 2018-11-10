@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 	struct my_message data;
 	int msgid;
 
-	if(msgid = msgget(1234, 0666 | IPC_CREAT))
+	if((msgid = msgget(1234, 0666 | IPC_CREAT)) == -1 ) 
 	{
 		fprintf(stderr, "msgget failed with error\n");
 		exit(1);
