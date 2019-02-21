@@ -2,8 +2,9 @@
 #include <string.h>
 #include <stdlib.h>
 
-char inp[100], prods[100][100];
 int i = 0;
+char inp[100], prods[100][100];
+
 
 void S();
 void A();
