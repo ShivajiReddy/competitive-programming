@@ -11,6 +11,7 @@
 #define SUCCESS_HANDLER printf("%s(): Success.\n", __PRETTY_FUNCTION__); exit(1);
 #define ERROR_HANDLER printf("%s(): Error occured.\n", __PRETTY_FUNCTION__); exit(1);
 
+
 const char delimiters[] = " ";
 
 char inname[100];
