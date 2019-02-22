@@ -14,8 +14,8 @@ lexpseq1 -> lexp lexpseq1 | E
 
 #define BUFFER_SIZE 256
 
-#define SUCCESS_HANDLER printf("%s(): Success.\n", __PRETTY_FUNCTION__); exit(1);
-#define ERROR_HANDLER printf("%s(): Error occured.\n", __PRETTY_FUNCTION__); exit(1);
+#define SUCCESS printf("%s(): Success.\n", __PRETTY_FUNCTION__); exit(1);
+#define ERROR printf("%s(): Error occured.\n", __PRETTY_FUNCTION__); exit(1);
 
 #define LOG_CURRENT printf("--> %s: %s\n", __PRETTY_FUNCTION__, input[i]);
 
@@ -58,7 +58,7 @@ void aterm()
 		i += 1;
 	} else 
 	{
-		ERROR_HANDLER;
+		ERROR;
 	}
 }
 
@@ -76,15 +76,15 @@ void list()
 			LOG_CURRENT;
 			if (strcmp(CURR, "$") == 0) 
 			{
-				SUCCESS_HANDLER;
+				SUCCESS;
 			}
 		} else 
 		{
-			ERROR_HANDLER;
+			ERROR;
 		}
 	} else 
 	{
-		ERROR_HANDLER;
+		ERROR;
 	}
 }
 

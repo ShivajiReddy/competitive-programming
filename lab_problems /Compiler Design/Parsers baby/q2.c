@@ -8,8 +8,8 @@
 #define BUFFER_SIZE 256
 
 #define LOG_CURRENT printf("--> %s: %s\n", __PRETTY_FUNCTION__, input[i]);
-#define SUCCESS_HANDLER printf("%s(): Success.\n", __PRETTY_FUNCTION__); exit(1);
-#define ERROR_HANDLER printf("%s(): Error occured.\n", __PRETTY_FUNCTION__); exit(1);
+#define SUCCESS printf("%s(): Success.\n", __PRETTY_FUNCTION__); exit(1);
+#define ERROR printf("%s(): Error occured.\n", __PRETTY_FUNCTION__); exit(1);
 
 
 const char delimiters[] = " ";
@@ -32,10 +32,10 @@ void E ()
 	E1();
 	if (strcmp(input[i], "$") == 0) 
 	{
-		SUCCESS_HANDLER;
+		SUCCESS;
 	} else 
 	{
-		ERROR_HANDLER;
+		ERROR;
 	}
 }
 
@@ -90,7 +90,7 @@ void F ()
 		i += 1;
 	} else 
 	{
-		ERROR_HANDLER;
+		ERROR;
 	}
 }
 
