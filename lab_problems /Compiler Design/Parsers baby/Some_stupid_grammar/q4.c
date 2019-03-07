@@ -142,6 +142,4 @@ int main (int argc, char const *argv[])
 	parse_input(inname);
 
 	return 0;
-
-	return 0;
 }
