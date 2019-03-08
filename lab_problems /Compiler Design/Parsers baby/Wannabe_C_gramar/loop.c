@@ -367,7 +367,7 @@ Node loop(FILE *fp, Node token)
 
 int main()
 {
-	FILE *fp = fopen("/Users/shambhavisarin/Desktop/SHAMBHAVI/SEM_6/CD/CD6/input.c", "r");
+	FILE *fp = fopen("input.c", "r");
 	if(fp==NULL)
 	{
 		printf("File not found\n");

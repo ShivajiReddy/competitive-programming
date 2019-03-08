@@ -463,7 +463,7 @@ Node switch_stmt(FILE *fp, Node token)
 
 int main()
 {
-	FILE *fp = fopen("/Users/shambhavisarin/Desktop/SHAMBHAVI/SEM_6/CD/CD6/input1.c", "r");
+	FILE *fp = fopen("input1.c", "r");
 	if(fp==NULL)
 	{
 		printf("File not found\n");
