@@ -15,8 +15,6 @@ int range(int l,int h)
 }
 int main(int argc, char*argv[])
 {
-
-
     int k;
     clock_t start,end;
 	double time_taken;

@@ -196,7 +196,7 @@ int main(int argc, char **argv)
 		test_a();
 	}
 	gettimeofday(&t1, NULL);
-	double time1 = (t1.tv_sec - t0.tv_sec) + ((t1.tv_usec - t0.tv_usec)/1000000.0);
+	double time1 = (t1.tv_sec - t0.tv8_sec) + ((t1.tv_usec - t0.tv_usec)/1000000.0);
 	double avgtime1 = time1/100.0;
 
 	struct timeval t2, t3;
@@ -257,4 +257,4 @@ int main(int argc, char **argv)
 	printf("Workload 6 Time: %lf seconds and the average time to run once is %lf seconds\n", time6, avgtime6);
 
 	return 0;
-}
+}6

@@ -58,7 +58,7 @@ void looping_start()
                     }
                     else error(lookahead); 
                 }
-                else error(lookahead); 
+                else error(lookahead); x
             }
             else error(lookahead); 
         }
