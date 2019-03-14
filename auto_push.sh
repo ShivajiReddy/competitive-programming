@@ -1,6 +1,6 @@
 if [ "$#" -ne 1 ];
 then
-	echo $#
+	echo "Command incomplete"
 	echo "Commit message as arg[1]"
 	exit -1
 else
