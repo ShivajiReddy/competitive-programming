@@ -1,0 +1,53 @@
+#include "mpi.h"
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char *argv[])
+{
+	int rank, n, i;
+	MPI_Status status;
+	MPI_Init(&argc, &argv);
+	char word[10];
+
+	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+
+	if(rank == 0)
+	{
+		printf("Enter the word to be sent: ");
+		scanf("%s", &word);
+
+		n = strlen(word);
+		MPI_Ssend(&n, 1, MPI_INT, 1, 0, MPI_COMM_WORLD);
+		for(i = 0; i < n; i++)
+		{
+			MPI_Ssend(&word[i], 1, MPI_CHAR, 1, i+1, MPI_COMM_WORLD);
+		}
+
+		for(i = 0; i < n; i++)
+		{
+			MPI_Recv(&word[i], 1, MPI_CHAR, 1, 2*i+1, MPI_COMM_WORLD, &status);
+		}
+		printf("\nReceived: %s\n", word);
+	}
+	else
+	{
+		MPI_Recv(&n, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, &status);
+		for(i = 0; i < n; i++)
+		{
+			MPI_Recv(&word[i], 1, MPI_CHAR, 0, i+1, MPI_COMM_WORLD, &status);
+
+			if(word[i] >= 97)
+				word[i] -= 32;
+			else
+				word[i] += 32;
+		}
+		for(i = 0; i < n; i++)
+		{
+			MPI_Ssend(&word[i], 1, MPI_CHAR, 0, 2*i + 1, MPI_COMM_WORLD);
+		}
+
+
+		printf("Toggled sending: %s", word);
+	}
+
+}
