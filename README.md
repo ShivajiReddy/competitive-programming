@@ -1,2 +1,2 @@
 # competitive-programming
-Codes to all the problems I solved on various competitive websites
+Random collection of Codes to all the problems I solved on various competitive websites
