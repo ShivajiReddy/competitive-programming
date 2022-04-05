@@ -6,7 +6,7 @@ public class removeStopWords {
 	public static void main(String[] args) {
 		// Read the file using whitespace as a delimiter (default)
 		// so that the input will be split into words
-		try {
+		//try {
 			Scanner file = new Scanner(new File("stop_words_english.txt"));
 			
 			Set<String> wordSet = new HashSet<>();
@@ -29,10 +29,10 @@ public class removeStopWords {
 			}
 	
 
-		} 
-		catch(Exception e) {
+		//} 
+		//catch(Exception e) {
 			//Exception occurred
-		}
+		//}
 
 		
 	}
