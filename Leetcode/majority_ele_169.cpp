@@ -7,4 +7,5 @@ public:
         //have to implement Boyre_Moore for O(n) O(1)
     }
     
+    
 };
