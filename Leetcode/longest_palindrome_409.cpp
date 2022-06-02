@@ -13,6 +13,7 @@ public:
                 odd_freq++;
             }
         }
+        
         return s.size() - odd_freq + (odd_freq > 0);
     }
 };
