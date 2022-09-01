@@ -1,0 +1,241 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small#1} & {\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Shivaji Reddy} \\ \vspace{1pt} 
+    \smallskip
+    \small 1170 Tripoli St, Riverside, California 92507 \\
+    
+    \small +14088964549 $|$ \href{mailto:x@x.com}{sdont002@ucr.edu} $|$ 
+    \href{https://www.linkedin.com/in/shivaji-reddy-042/}{linkedin.com/shivaji-reddy-042} $|$
+    \href{https://github.com/ShivajiReddy}{github.com/ShivajiReddy}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Riverside}{Sept 2021 -- May 2023}
+      {MS, Computer Science}{GPA: 4.0/4.0}
+    \resumeSubheading
+      {Manipal Institute of Technology}{July 2016 -- June 2020}
+      {Bachelor of Technology, Computer Science}{}
+  \resumeSubHeadingListEnd
+
+ %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Java, Kotlin, C, Swift, Python, Bash} \\
+     \textbf{Frameworks and Databases: }{Spring, Android, Spring Boot, NodeJS, Selenium, JSOUP, Hadoop, Terraform} \\
+     \textbf{Software Development}{:Agile, Scrum, SDLC, Rest API, JUnit, JIRA, Data scraping} \\
+     \textbf{Developer Tools}{: Linux, AWS, Git, Github, Postman, Microservices, Docker} 
+    }}
+ \end{itemize}
+
+
+
+%-----------EXPERIENCE-----------
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Software Engineer Intern}{June 2022 -- Present}
+      {Esri}{Redlands, California}
+      \resumeItemListStart
+        \resumeItem{Designing an Image Comparison framework within ArcGIS Android SDK for Esri Maps that aims to handle, analyze and rectify Map rendering failures across the application suite.}
+        \resumeItem{Contributing to the new Open Source Kotlin Android Applications with latest Map Enhancements and visualisations.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Graduate Teaching Assistant -- Advanced Operating Systems}{March 2022 - Present}
+      {University of California, Riverside}{Riverside, California}
+      \resumeItemListStart
+        \resumeItem{Conducted Programming Sessions and guided a Graduate class of 60 students through a series of Kernel Programming problems in xv6 OS on System calls, Scheduling Algorithms, Deadlock Prevention, and Multi-threading.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{July 2020 -- July 2021}
+      {Cardinal Health}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Engaged in the Costco Pharmacy Application team that is responsible for the continuous development and maintenance for an in-production product, affecting 10M+ users in the US.}
+        \resumeItem{Designed and developed key features like ability to register for Flushots, contact-less package pickups, locker delivery.}
+        \resumeItem{Worked on a third-party API integration module that fused Costco Pharmacy into Instacart increasing the user traffic by over 20\%.}
+        \resumeItem{Managed periodic integration of core product functionalities into Costco application with 100\% success rate.}
+        \resumeItem{Tech Stack: Java, Spring, Springboot, AWS, Terraform, JDBC, MySQL}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Engineer Intern}{Jan 2020 -- June 2020}
+      {Cardinal Health}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Deployed a centralized full-stack web application using Spring, React, SQL and Docker to analyze and handle failed CRON jobs across 100+ client applications of the organization increasing the response time by over 5x.}
+        \resumeItem{Structured a new product deployment cycle using Terraform scripts to launch and auto-scale AWS Instances.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Summer Research Intern}{May 2018 -- July 2018}
+      {International Institute of Technology (IIIT)}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Designed a configurable 360-degree evaluation system to analyze brain responses that is currently in use to conduct various studies in the Cognitive Science lab.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{TV Series Search Engine} $|$ \emph{Java, Hadoop, Jsoup, Lucene, MongoDB, Node JS, React JS}}{Nov 2022}
+          \resumeItemListStart
+            \resumeItem{Built a Google-like Search engine that ranks relevant information by scraping data from Wikipedia pages using a multi-threaded web-crawler and indexing them using Lucene and Hadoop MapReduce with a React UI.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\textbf{Job Scheduler Dashboard} $|$ \emph{Java, Spring, SQL, AWS, Jenkins, Terraform}}{June 2020}
+          \resumeItemListStart
+            \resumeItem{Designed and Deployed a central dashboard that acts as a one-point application to monitor, analyze and handle various  CronJobs for all pharmacy clients in the company product.}
+            \resumeItem{Key features: Re-trigger failed jobs at once, Creation of new jobs in bulk, Fetch Job, job-history visulization.}
+          \resumeItemListEnd
+
+
+ 
+      \resumeProjectHeading
+          {\textbf{XV6 Thread Library} $|$ \emph{Java, Android}}{Nov 2018}
+          \resumeItemListStart
+            \resumeItem{Created an Android app for freshmen, where time tables of all the freshman classes can be easily accessed offline. Received over 250+ Google Playstore installs within 24hours of launching}
+          \resumeItemListEnd        
+     
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+
+%-------------------------------------------
+\end{document}
+
