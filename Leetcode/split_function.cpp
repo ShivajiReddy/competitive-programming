@@ -1,3 +1,5 @@
+https://www.quora.com/How-do-I-split-a-string-by-space-into-an-array-in-c++
+
 vector<string> inputWords;
 
 string input, word;
